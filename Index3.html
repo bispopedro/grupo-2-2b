@@ -1,3 +1,4 @@
+HTML
 <!DOCTYPE html>
 <html>
   <head>
@@ -25,31 +26,269 @@
 <button> BEST SOFTWARE SERVICE </button>
   <h1> Create & analytics all necessaries</h1>
     <h4> Manage your all documents transparent, safe and secure. We provide world's</h4>
-        <button> Get Started </button>
-        <button> Explore More </button>
+        <button class="button1"> Get Started </button>
+        <button class="button2">  Explore More </button>
     <div>
       <img src="#" </img>
-      <div>
+      <div class="trusted">
         <h3> We are trusted by <h3>
+          </div>
+          <div class="logos">
           <a href="#">NETFLIX</a>
           <a href="#">Slack</a>
           <a href="#">CONVERSE</a>
           <a href="#">SHAZAM</a>
           <a href="#">PRADA</a>
           </div>
-            <button> FREATURES </button>
+            <button class="button3"> FREATURES </button>
             <h2> Most essential features </h2>
             <h5> Lorem ipsum dolor sit amet consectetur. Neque vei orci eget rhoncus pretium. Proin ultrices elementum aliquet</h5>
-            <img src= "#" </img>
-            <img src= "#" </img>
-            <img src= "#" </img>
-          </body>
+<button>Services godown</button>
+     </div>
+        <section class="as">
+             <div class="e">
+                <h6>Flexibility</h6>
+                <img src="#" class="ime"> 
+                <img src="#" class="ime">
+             </div>
+             <div class="f">
+ <h6>Vast storage</h6>
+                <button class="bot">Working</button>
+                 <button class="bot">Remaning</button> 
+                <img src="#" class="ime">
+             </div>
+             <div class="d">
+                <h6>Latest analytics</h6> 
+                <select class="sel"> 
+                    Growth rate
+                </select>
+               <span class="spa">+5.50%</span>
+            </div>
+    </section>
+    </main>
+        </body>
             </html>
 
+CSS
+. {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', sans-serif;
+}
 
+body {
+  background-color: white;
+  color: black;
+  line-height: 1.6;
+}
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 4rem;
+  background-color: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
 
+header img {
+  width: 40px;
+  height: auto;
+}
 
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
 
+header nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
 
+header button {
+  margin-left: 1rem;
+  padding: 0.6rem 1.4rem;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border-radius:30px;
+}
 
+header button:first-of-type {
+  background-color: white;
+  color: black;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1),
+            -4px -4px 10px rgba(255, 255, 255, 0.8);
+}
+
+section {
+  padding: 4rem;
+}
+
+section > div {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section button {
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+section button:first-of-type {
+  background-color:white;
+  color: blueviolet;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1),
+            -4px -4px 10px rgba(255, 255, 255, 0.8);
+  border-radius: 30px
+}
+
+section h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+section h4 {
+  font-size: 1.2rem;
+  color: grey;
+  margin-bottom: 2rem;
+}
+.button1{
+  color:white;
+  background-color:blueviolet;
+  border-radius: 30px
+}
+.button2 {
+  color:black;
+    background-color:lightGrey;
+  border-radius: 30px
+}
+.trusted{
+  text-align:center;
+  margin: 2rem 0;
+}
+.logos{
+ text-align:center;
+  margin: 2rem 0;
+}
+
+section a {
+  display: inline-block;
+  margin: 0.8rem 1.2rem;
+  font-weight: bold;
+  color: dimgray;
+  text-decoration: none;
+}
+.button3{
+  display:block;
+  margin:0 auto;
+  
+}
+
+h2 {
+  font-size: 2rem;
+  margin: 3rem 0 1rem;
+  text-align:center;
+  margin: 2rem 0;
+}
+
+h5 {
+  font-size: 1rem;
+  color: dimgray;
+  text-align:center;
+  margin: 2rem 0;
+}
+
+.u {
+  background-color: lightgrey;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  } 
+}
+.aut{
+    justify-content: center;
+    align-items: center;
+}
+.as{
+display: flex;
+gap: 10px;
+padding: 15px;
+}
+.e, .f, .d{
+    display: flex;
+    justify-content: center;
+    width: 30rem;
+    height: 10rem;
+    background-color: aquamarine;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+.e{
+    background-color: lightskyblue;
+    margin-top: 80px;
+}
+.f{
+    background-color: peachpuff;
+    margin-top: 60px;
+}
+.d{
+    background-color: lightpink;
+}
+.ime{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: auto;
+    margin-top: 70px;
+}
+.bot{
+    display: flex;
+    justify-content: flex-start;
+    width: 4rem;
+    height: 2rem;
+    font-size: 8px;
+    margin-top: 65px;
+}
+.sel{
+    display: flex;
+    justify-content: flex-start;
+    width: 2rem;
+    height: 1.4rem;
+    margin-top: 70px;
+
+}
+.spa{
+    display: flex;
+    justify-content: flex-start;
+    width: 3.1rem;
+    margin-top: 70px;
+    height: 1rem;
+    background-color: green;
+    border: 3px solid;
+    border-radius: 10px;
+}
+    </style>
